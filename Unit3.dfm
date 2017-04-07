@@ -25,7 +25,7 @@ object Form3: TForm3
     Top = 133
     Width = 29
     Height = 13
-    Caption = 'TU UP'
+    Caption = 'TU IP'
   end
   object Edit1: TEdit
     Left = 112
