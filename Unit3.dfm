@@ -23,7 +23,7 @@ object Form3: TForm3
   object Label2: TLabel
     Left = 88
     Top = 133
-    Width = 29
+    Width = 26
     Height = 13
     Caption = 'TU IP'
   end
