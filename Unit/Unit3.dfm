@@ -21,8 +21,8 @@ object Form3: TForm3
     Caption = 'Pagina para descargar'
   end
   object Label2: TLabel
-    Left = 88
-    Top = 133
+    Left = 96
+    Top = 104
     Width = 26
     Height = 13
     Caption = 'TU IP'
@@ -35,23 +35,23 @@ object Form3: TForm3
     TabOrder = 0
     Text = 'http://www.google.cl'
   end
-  object Button1: TButton
-    Left = 152
-    Top = 104
-    Width = 75
-    Height = 25
-    Caption = 'Button1'
-    TabOrder = 1
-    OnClick = Button1Click
-  end
   object Edit2: TEdit
-    Left = 72
-    Top = 160
+    Left = 73
+    Top = 123
     Width = 121
     Height = 21
     Enabled = False
     ReadOnly = True
-    TabOrder = 2
+    TabOrder = 1
     Text = 'TU IP'
+  end
+  object Button2: TButton
+    Left = 200
+    Top = 121
+    Width = 75
+    Height = 25
+    Caption = 'Download'
+    TabOrder = 2
+    OnClick = Button2Click
   end
 end
