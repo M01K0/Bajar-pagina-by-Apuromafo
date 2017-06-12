@@ -1,5 +1,5 @@
-=========================*{ History }*===============================
-Programa : Bajar Página by Apuromafo 
+======================*{ History }*===============================
+Programa : Bajar PÃ¡gina by Apuromafo 
 Web : https://github.com/apuromafo/Bajar-pagina-by-Apuromafo 
 =================================================================
 Leyenda:
@@ -7,7 +7,7 @@ Leyenda:
 [-] Removido
 [*] Cambiado
 [%] Arreglado(bugs)
-[^] Actualizacionesy / o Información 
+[^] Actualizacionesy / o InformaciÃ³n 
 =================================================================
 Version1.1 2017-05-24
 =================================================================
