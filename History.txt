@@ -8,11 +8,12 @@ Leyenda:
 [*] Cambiado
 [%] Arreglado(bugs)
 [^] Actualizacionesy / o Información 
+
 =================================================================
 Version1.1 2017-05-24
 =================================================================
 [*] opcion del Navegador customizado, se realiza de forma generica
- [^] Programa que permite bajar pagina formato UTF-8
+[^] Programa que permite bajar pagina formato UTF-8
 
 =================================================================
 Version1.0 2017-05-01
