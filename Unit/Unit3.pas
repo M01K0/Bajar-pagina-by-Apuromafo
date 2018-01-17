@@ -6,7 +6,7 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
   System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls,
-  WinInet, Winsock, URLMon, ShellApi;
+  WinInet, Winsock, URLMon, ShellApi, Vcl.ExtCtrls;
 // (getip las primeras 2 y download las siguientes)
 
 type
@@ -16,6 +16,9 @@ type
     Edit2: TEdit;
     Label2: TLabel;
     Button2: TButton;
+    Label3: TLabel;
+    Edit3: TEdit;
+    Opcion: TRadioGroup;
 
     procedure Button2Click(Sender: TObject);
 
@@ -63,19 +66,27 @@ begin
 end;
 
 procedure TForm3.Button2Click(Sender: TObject);
-const
-  DestFile = 'pagina2.htm';
+
 var
-  SourceFile: string;
+  DestFile, SourceFile: string;
 begin
   SourceFile := Edit1.text;
+  DestFile := Edit3.text;
+  if length(DestFile) < 1 then
+  begin
+    DestFile := 'pagina2.html';
+  end;
 
   if DownloadFile(SourceFile, DestFile) then
   begin
     Edit2.text := GetIp;
     ShowMessage('Download ok!');
-    ShellExecute(Application.Handle, PChar('open'), PChar(DestFile), PChar(''),
-      nil, SW_NORMAL)
+    if Opcion.ItemIndex = 0 then
+    begin
+
+      ShellExecute(Application.Handle, PChar('open'), PChar(DestFile),
+        PChar(''), nil, SW_NORMAL)
+    end;
   end
   else
     ShowMessage('Error maybe need http:// ' + SourceFile)
