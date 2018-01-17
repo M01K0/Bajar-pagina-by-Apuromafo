@@ -6,7 +6,7 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
   System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls,
-  WinInet, Winsock, URLMon, ShellApi, Vcl.ExtCtrls;
+  WinInet, Winsock, URLMon, ShellApi, Vcl.ExtCtrls, Vcl.Imaging.jpeg;
 // (getip las primeras 2 y download las siguientes)
 
 type
@@ -19,6 +19,7 @@ type
     Label3: TLabel;
     Edit3: TEdit;
     Opcion: TRadioGroup;
+    Image1: TImage;
 
     procedure Button2Click(Sender: TObject);
 
